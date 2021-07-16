@@ -1,0 +1,156 @@
+@font-face {
+    font-family: main;
+    src: url(Cabin-Regular.ttf);
+}
+
+body{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    margin: 0px;
+}
+
+
+.flex-main{
+    display: flex;
+    height: 100%;
+    font-family: main;
+}
+
+#intro{
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+#intro-title{
+    height: 30%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%);
+    padding-bottom: 10%
+}
+#intro-name{
+    font-size: 5em;
+    padding-left: 5%;
+    padding-top: 15%;
+}
+#intro-blurb{
+    font-size: 2em;
+    padding-left: 5%;
+    padding-top: 1em;
+}
+
+#showcase{
+    background-color: #00065E;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    color:white;
+    font-size: 2em;
+}
+.showcase-header{
+    border-bottom: black 1px;
+    padding-top: 1em;
+    padding-bottom:1em;
+}
+.showcase-button{
+    cursor: pointer;
+    background-color: #333BAB;
+    border-bottom: black 1px;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+.showcase-social{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width:100%;
+    height: 20%;
+}
+
+.showcase-skills{
+    background-color: #242A78;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.skill-cloud{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.skill-tag{
+    background-color: #000BAB;
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.5em;
+}
+
+.icon{
+    color:white;
+}
+
+@media only screen and (max-width: 900px) {
+    .flex-main{
+        flex-direction: column;
+    }
+    #intro{
+        width: 100%;
+    }
+    #intro-name{
+        font-size: 3em;
+    }
+    #intro-blurb{
+        font-size: 1em;
+    }
+    
+    #showcase{
+        width: 100%;
+    }
+    .showcase-social{
+        text-align: center;
+        position: relative;
+        height:auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #intro{
+        width: 80%;
+    }
+    #showcase{
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+    #intro{
+        width: 80%;
+    }
+    #showcase{
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    #intro{
+        width: 85%;
+    }
+    #showcase{
+        width: 15%;
+    }
+
+}
